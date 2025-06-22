@@ -89,6 +89,7 @@ function App() {
           }}
         >
           <input
+            className="border border-b-fuchsia-700 bg-fuchsia-100 "
             value={name}
             type="text"
             onInput={(e: React.ChangeEvent<HTMLInputElement>) => {
@@ -97,7 +98,12 @@ function App() {
             }}
           />
 
-          <button type="submit">Save</button>
+          <button
+            className="bg-fuchsia-700 hover:bg-fuchsia-900 p-2 rounded-lg text-black"
+            type="submit"
+          >
+            Save
+          </button>
         </form>
       </div>
     </>

@@ -31,7 +31,7 @@ export const TodoList = () => {
     <div>
       {state.todoList.map((el) => {
         return (
-          <div key={el.id}>
+          <div key={el.id} className="flex gap-3">
             <TodoItem todoId={el.id} todoText={el.text} />
             <input
               onClick={() =>
